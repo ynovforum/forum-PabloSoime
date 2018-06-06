@@ -1,0 +1,35 @@
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title Forum projet
+        link(rel='stylesheet', href='css/addReview.css')
+    body
+        div(class="navbar")
+            div(class="navbar-left")
+                div(class="icon")
+                    a(href="/")
+                a(href="/addReview")
+                    p Ajouter une question
+                a(href="/addReview")
+                    p Browse
+                a(href="/addReview")
+                    p Your Tickets
+            div(class="navbar-right")
+                input(placeholder="Search")
+                a(href='/profile')
+                    p Hello #{user.userName}
+                a(href='/disconnect')
+                    p Déconnexion
+        div(class="title")
+            h2 Ajouter une question
+        div(class="container")
+            div(class="container-form")
+                form(action='/addReview' method='post')
+                    label(for="title_field") Nom de la question
+                    input(id="title_field", name='title')
+                    label(for="content_field") Commentaire
+                    textarea(id="content_field" name='content')
+                    div(class="right")
+                        button(type='submit') Poster

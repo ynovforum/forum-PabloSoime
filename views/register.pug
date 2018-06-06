@@ -1,0 +1,31 @@
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title Forum projet
+        link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet")
+        link(rel='stylesheet', href='css/login.css')
+    body
+        div(class="container")
+            div(class="size-title")
+                h1 Inscrivez-vous !
+            div(class="form")
+                form(method="post")
+                    label(for="userName") Email
+                    input(type="email", name="userName", id="userName" autocomplete="username")
+                    label(for="password") Mot de Passe
+                    input(type="password", name="password", id="password" autocomplete="password")
+                    label(for="pseudo") Pseudo
+                    input(type="text", name="pseudo", id="pseudo" autocomplete="pseudo")
+                    button(type="submit") S'inscrire
+            div(class="social")
+                h2 S'inscrire avec les réseaux sociaux
+                div(class="flex")
+                    div(class="icon twitter")
+                    div(class="icon facebook")
+                    div(class="icon pinterest")
+                    div(class="icon dribbble right")
+        div(class="footer")
+            div(class="account")
+                a(href="/login") Se connecter

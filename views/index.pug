@@ -1,0 +1,33 @@
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title Forum projet
+        link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet")
+        link(rel='stylesheet', href='css/index.css')
+    body
+        div(class="navbar")
+            div(class="navbar-left")
+                div(class="icon")
+                a(href="/addReview")
+                    p Ajouter une question
+                a(href="/addReview")
+                    p Browse
+                a(href="/addReview")
+                    p Your Tickets
+            div(class="navbar-right")
+                input(placeholder="Search")
+                a(href='/profile')
+                    p Hello #{user.userName}
+                a(href='/disconnect')
+                    p Déconnexion
+        div(class="container")
+            div(class="container-title")
+                h1 Toutes les questions
+            div(class="container-police")
+                p Question
+                p Utilisateur
+                p Date
+            div(class="container-list")
+
